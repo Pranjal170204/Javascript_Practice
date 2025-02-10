@@ -79,11 +79,12 @@ console.log(fruits);
 
 let array=[1,2,3,4,5,6];
 
-let newArr=array.map((num,index)=>{   //we will store it in new array after manipulating original arr
+let newArr=array.map((num,index)=>{   //we will store it in new array after manipulating original arr nothing happens to original array 
     return num**2;
 })
 
 console.log(newArr);
+console.log(array);
 
 //<--------Filter Methods---------->
 
@@ -100,6 +101,7 @@ let evenArr=array2.filter((num)=>{
     }
 })
 console.log(evenArr);
+console.log(array2);
 //  Function to test each element of the array. It should return true to keep the element, or false otherwise.
 
 let intArr=array2.filter((num)=>{   
@@ -114,4 +116,60 @@ console.log(intArr);
 
 
 //<-------Reduce Method---------->
+
+let ans=array2.reduce((acc,curr)=>{
+    return acc+curr;
+},0); //initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array will be used as the initial value, and iteration starts from the second element.
+
+console.log(ans);
+
+//<-----sort method-------->
+let array3=[4,3,2,1];
+let ans2=array3.sort();
+console.log(ans2);
+ans2.push(5);
+//index of any element
+
+console.log(array3.indexOf(5));
+console.log(ans2.indexOf(5));
+//find 
+
+//forEach and forloop
+
+let arr5=[1,3,5,7,9]; //traditional loop
+for(let i=0;i<arr5.length;i++){
+    console.log(arr5[i]);
+}
+
+arr5.forEach((element,index)=> { //forEach loop 
+    console.log(arr5[index]*element);
+});
+
+//forIn  (objects)
+
+const person = {
+  name: 'Mayank',
+  age: 21,
+  city: 'Delhi'
+};
+
+for (const key in person) {
+  console.log(key + ": " + person[key])
+}
+
+console.log(person.age);
+console.log(person.name)
+/* Output :
+name: Mayank
+age: 21
+city: Delhi
+*/
+
+//forOf (arrays and strings)
+
+let arr6=[10,20,30,40]
+
+for(let num of arr6){
+    console.log(num); 
+}
 

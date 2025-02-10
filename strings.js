@@ -42,3 +42,5 @@ let words2=sentence3.split('\\');  //treat \ as normal char instead of special c
 console.log(words2);
 
 console.log(words2.join(""));
+
+console.log(op1[0]);
