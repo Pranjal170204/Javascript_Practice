@@ -1,7 +1,7 @@
 // DOM -->window object is global object -->in top of heirerchy
 
 //-->document object model
-//when html file is converted into Js object that object is "document"
+//when html file is converted into sJ object that object is "document"
 
 //tags--->(tokeniser)token--->nodes
 

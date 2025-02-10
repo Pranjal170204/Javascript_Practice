@@ -1,0 +1,9 @@
+reflow -> process of calculating positon/dimension of element 
+computationally intensive task
+
+
+repaint-->process of displaying element pixel by pixel
+
+
+Document Fragment-->lightweight document object
+--> if any element is appended -->no reflow or repaint
